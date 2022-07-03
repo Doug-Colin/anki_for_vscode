@@ -1,4 +1,6 @@
 /*
+COMMITTED
+
 8 kyu - Convert a String to a Number!
 
  Description
@@ -24,5 +26,6 @@ describe( "stringToNumber", function(){
 */
 
 const stringToNumber = function(str){
-  return parseInt(str);
-}
+    return parseInt(str);
+  }
+  

@@ -23,7 +23,7 @@ An event handler is a callback function that JS registers with the host environm
 <!------------------------------------------------------------------------------------------- -->
 ## What types of events trigger event handlers in JS?
 
-Event handler callbacks are triggered by user interactions like click, hover, or submit and system and network events like timers, I/O completion, and other system signals.
+Event handler callbacks are triggered by user interactions like click, hover, or submit and system or network events like timers, I/O completion, and other system signals.
 
 [#callbacks]()
 

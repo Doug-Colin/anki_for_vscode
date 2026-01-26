@@ -21,23 +21,23 @@ The ARPANET (US military Advanced Research Projects Agency Network) was the firs
 
 ## What is packet switching?
 
-Packet switching is a telecommunications method of grouping data into fixed format short messages known as network packets.
+Packet switching is a telecommunications method of transmitting data by breaking it down into small, formatted, independently routed 'packets';  
 
 [#packets]() [#]() [#]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What is a packet?
+## What is a packet, or network packet?
 
-A packet, or network packet, is a unit of data formatted to carry metadata headers and a data payload or 'body' for transmission on a packet-switching network.
+A packets, or network packet, is a small formatted unit by which data is transferred between clients and servers on the web. Each packet is formatted into a header containing information crucial for transmission and a payload or 'body' containging the actual data being sent.
 
 [#]() [#]() [#]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What are the parts of a network packet?
+## What is the format of a network packet?
 
-A network packet typically consists of metadata headers and a data payload;  , and trailers; the headers and trailers containing transmission-crucial metadata (?) such as origin and destination addresses and content type and size.
+A network packet is formatted into a header and a payload or 'body'; the header contains metadata including source and destination addresses, content type packet sequence number,  and content type and size.
 
 [#]() [#]() [#]()
 
@@ -58,6 +58,20 @@ A browser is a program that enables users to view, navigate, and interact with w
 [#]() [#]() [#]()
 
 <!------------------------------------------------------------------------------------------- -->
+## What is a client?
+
+A client is any internet-detected devices that request data from somewhere; it can be a laptop, phone, tablet, a smart device, or in certain circumstances, even a server. 
+
+[#]() [#]() [#]()
+
+<!------------------------------------------------------------------------------------------- -->
+## What is a server?
+
+A server is a computer that stores data and responds to client devices requesting such data.
+
+[#]() [#]() [#]()
+
+<!------------------------------------------------------------------------------------------- -->
 
 ## What are the two types of browser 'engine'?
 
@@ -67,9 +81,9 @@ Browsers have two types of engines: rendering engines and Javascript engines.
 
 <!------------------------------------------------------------------------------------------- -->
 
-## Which rendering engines are used by the Chrome, Edge, Safari, and Firefox browsers use?
+## Which rendering engines are used by the Chrome, Edge, Safari, and Firefox browsers?
 
-Blink is a rendering engine used by Chrome and Edge, while Safari uses Webkit and Firefox uses Gecko.
+Chrome and Edge use the Blink rendering engine, while Safari uses Apple's Webkit and Firefox uses Gecko.
 
 [#]() [#]() [#]()
 
@@ -77,8 +91,7 @@ Blink is a rendering engine used by Chrome and Edge, while Safari uses Webkit an
 
 ## What are the three primary JavaScript engines used by browsers?
 
-Spidermonkey is the JS and WebAssembly engine used by Mozilla (and thus Firefox); Chrome uses the V8 JS engine while Safari uses Apple's JavaScriptCore.
-
+Safari uses Apple's JavaScriptCore engine, while Chrome uses v8 and Mozilla (and thus Firefox) uses Spidermonkey as its JavaScript and WebAssembly engine.
 
 
 [#]() [#]() [#]()
@@ -107,9 +120,71 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0
 
 <!------------------------------------------------------------------------------------------- -->
 
-## 
+## What is TCP/IP?
+
+Transission Control Protocol (TCP) and Internet Protocol (IP), referred to as TCP/IP, are communication protocols that define how data should travel across the internet. 
+
+[#]() [#]() [#]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## What is DNS?
+
+The Domain Name System (DNS) is the plain-language address book for websites; when you enter a URL into your browser's address or URL bar, the browser looks at the Domain Name System to find the websites Internet Protocol (IP) addresss.  
+
+[#]() [#]() [#]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## What is a website?
+
+A website is is a collection of web pages built from HTML, CSS, and JavaScript code, which the browser interprets and assembled into a web page to display to a user. 
+
+[#]() [#]() [#]()
+<!------------------------------------------------------------------------------------------- -->
+
+## What are the types of 
+
+A website is is a collection of web pages built from HTML, CSS, and JavaScript code, which the browser interprets and assembled into a web page to display to a user. 
+
+[#]() [#]() [#]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## Technically, what happens when a user enters a web address?
+
+% ---- INCOMPLETE ----- --> --> --> 
+
+The Browser:
+- goes to the Domain Name System (DNS) server and finds the 'real' address, or Internet Protocol (IP) address, of the server with that registered Domain Name.
+- The browser sends a HTTP request to that IP address
+- 
 
 
+[#]() [#]() [#]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+
+## What is a URL?
+
+A Uniform Resource Locator (URL) is a text string that specifies where a resource can be found on the internet. 
+
+[#]() [#]() [#]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## ## What are the components of a URL?
+
+A Uniform Resource Locator consists of a protocol (http/https), a domain name, and the path to the resource at that domain. 
+
+[#]() [#]() [#]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## What is a web address?
+
+A web address is the non-protocol part of a URL (Uniform Resource Locator); it contains the domain name and the path to the resource at that domain. 
 
 [#]() [#]() [#]()
 
@@ -117,54 +192,7 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0
 
 ## 
 
-
-
-[#]() [#]() [#]()
-
-<!------------------------------------------------------------------------------------------- -->
-
-## 
-
-
-
-[#]() [#]() [#]()
-
-<!------------------------------------------------------------------------------------------- -->
-
-## 
-
-
-
-[#]() [#]() [#]()
-
-<!------------------------------------------------------------------------------------------- -->
-
-
-## 
-
-
-[#]() [#]() [#]()
-
-<!------------------------------------------------------------------------------------------- -->
-
-## 
-
-
-
-[#]() [#]() [#]()
-
-<!------------------------------------------------------------------------------------------- -->
-
-## 
-
-
-
-[#]() [#]() [#]()
-
-<!------------------------------------------------------------------------------------------- -->
-
-## 
-
+***: A way to filter out low quality rhetoric and sustain high quality conversation and critical and or substantive dialogue; for example, repeated rhetorical devices and or argument tropes and debate tactic cliches. Could it be an upvote/downvote system? Too easuly gameable for tribes in its simplest form. What about ... a bot or hardcoded dict that assesses language and categorizes part of sentences/,essages/responses, assessing for those lowest quality things, that could actually be encodeable? New words and language would have to be regularly added. THAT'S AN INTERESTING PROJECT. ***
 
 
 [#]() [#]() [#]()

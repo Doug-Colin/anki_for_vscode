@@ -65,6 +65,7 @@ Adding `--help` to a command will display helpful information, while adding `man
 
 ## How can you use the ls (list) command to view the contents of directories other than the CWD?
 
+%
 Simply add the directory path to the command after ls; for example `ls Desktop/dev/projects` will list the contents of `Desktop/dev/projects` no matter the current working directory.
 
 [#]() [#command line basics]() [#]()
@@ -97,6 +98,7 @@ Command `cd ..` shifts up a directory, while `cd -` shifts back to whatever the 
 
 ## What is the difference in syntax between short and long shell command options?
 
+%
 Short shell command options are preceded by a single dash, whereas long shell command options are preceded by two dashes; for example `npm -v` versus `npm --version`.
 
 [#]() [#command line basics]() [#]()
@@ -113,7 +115,7 @@ An absolute path specifies a location from the root of the file system, whereas 
 
 ## What do . and .. signify?
 
-. signifies 'the current directory' whereas .. signifies 'the directory above the current dir'.
+. signifies 'current directory' whereas .. signifies 'directory above current'.
 
 [#]() [#command line basics]() [#]()
 
@@ -135,11 +137,16 @@ The `-R` option or flag can be used with the list command `ls` to display all ne
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What flag must be used with the `mkdir` commans if making multiple directories via a single defined path? For example, if dir `dev` was empty and you wanted to create the nested sub directories `project` and `personal` via `nkdir dev/projects/personal`what option or flag would be necessary?
+## What flag must be used to create nested directories via `mkdir`?
 
-The `-p` flag is necessary when using command `mkdir` to create nested intermediary sub directories.
+For example, if dir `dev` was empty and you wanted to create `dev/projects/personal`, what flag ensures creation of intermediate () directory `projects`?
+%
+The `-p` flag creates parent/intermediate directories as needed.
 
-[#]() [#command line basics]() [#]()
+For Example:
+`mkdir -p dev/projects/personal`: creates both projects/ and personal/ even if dev/ is empty.
+
+[#shell]() [#unix]() [#mkdir]() [#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -153,23 +160,39 @@ Using the move command: `mv path/<filename> /path/<newfilename>` and the
 
 ## ## How do you move files or directories in shell?
 
-Using the move command: ``mv path/<filename> /new_path/<filename>`.
+Using the move command: `mv path/<filename> /new_path/<filename>`.
 
 [#]() [#command line basics]() [#]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What shell command can be used to copy a file?
+## What shell command can be used to copy a file or directory?
 
-The copy command, or `cp`, is used to copy a file, with the following syntax `cp <filename>.ext <destination/<new filename if desired>`
+The copy command `cp` is used to copy a file or directory.
 
 [#]() [#command line basics]() [#]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What option or flag is necessary to copy a directory's nested structure when using the copy or `cp` shell command?
+## What shell command can be used to copy a file or directory?
 
-The recursive flag, `-r`, must be used with the `cp` command when copying a directory with nested structure.
+The copy command `cp` is used to copy a file or directory.
+
+[#]() [#command line basics]() [#]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## What arguments can be called with the copy command `cp`?
+
+The copy command `cp` accepts `<file_to_copy>.ext` and `/destination_path` or `/destination_path/name_of_copy.ext`
+
+[#]() [#command line basics]() [#]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## What option or flag is necessary to use if copying a directory `cp` shell command?
+
+The recursive flag `-R` must be used when `cp` copying directories.
 
 [#]() [#command line basics]() [#]()
 
@@ -183,84 +206,103 @@ The remove, or `rm` command can be used to delete files; for example., `rm filen
 
 <!------------------------------------------------------------------------------------------- -->
 
-## ?
+## What does the -i flag typically mean in Unix commands?
+
+%
+Interactive mode for destructive commands and case-insensitive for search commands.
+Example:
+`mv, cp, rm` + `-i`: Enter interactive mode out of caution.
+`grep -i`:: search, case insensitive.
+
+Tags: [#shell]() [#unix]() [#flags]() [#command line basics]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## What are wildcards in UNIX?
+
+Wildcards are special characters used for pattern matching filenames.
 
 [#]() [#command line basics]() [#]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## ?
+## What does the `*` wildcard match in Unix shells?
+
+%
+`*` matches anything or nothing.
+
+Examples:
+`*.js` : match all files ending with .js
+`test*` match all files beginning with test
+
+[#shell]() [#wildcards]() [#unix]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## What does the `?` wildcard match in Unix shells?
+
+%
+Exactly one character.
+
+Examples:
+`file?.txt` matches file1.txt and fileA.txt but not file or file12.txt.
+
+[#shell]() [#command line basics]() [#]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## What does the `[...]` wildcard match in Unix shells?
+
+%
+Any one character of those specified.
+
+Examples:
+`[abc]*`: match files starting with either , b, or c.
+`file[0-9].txt`: match file0.txt through file9.txt.
+
+[#shell]() [#wildcards]() [#unix]() [#command line basics]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## When used inside square brackets, what does the `-` character mean?
+
+%
+The `-` inside `[]` means "range" or "in between".
+
+Examples:
+`[0-9]`: match any digit from 0 through 9
+`[a-z]`: match any lowercase letter
+`[A-Z]`: any uppercase letter
+`[a-zA-Z]`: any letter, case insensitive
+
+[#shell]() [#wildcards]() [#unix]() [#command line basics]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## What do each of the following UNIX shell commands do?
+
+```
+ls *.txt
+rm temp*
+cp *.js backup/
+```
+
+%
+
+```
+ls *.txt        # match all files ending in .txt.
+rm temp*        # remove all files starting with "temp"
+cp *.js backup/ # copy all files ending in .js to dir backup/
+```
 
 [#]() [#command line basics]() [#]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## ?
+## Should you include extensions when working with filenames in UNIX shells?
+
+Yes.
 
 [#]() [#command line basics]() [#]()
 
 <!------------------------------------------------------------------------------------------- -->
-
-## ?
-
-[#]() [#command line basics]() [#]()
-
-<!------------------------------------------------------------------------------------------- -->
-
-## ?
-
-[#]() [#command line basics]() [#]()
-
-<!------------------------------------------------------------------------------------------- -->
-
-## ?
-
-[#]() [#command line basics]() [#]()
-
-<!------------------------------------------------------------------------------------------- -->
-
-## ?
-
-[#]() [#command line basics]() [#]()
-
-<!------------------------------------------------------------------------------------------- -->
-
-## ?
-
-[#]() [#command line basics]() [#]()
-
-<!------------------------------------------------------------------------------------------- -->
-
-## ?
-
-[#]() [#command line basics]() [#]()
-
-<!------------------------------------------------------------------------------------------- -->
-
-## ?
-
-[#]() [#command line basics]() [#]()
-
-<!------------------------------------------------------------------------------------------- -->
-
-## ?
-
-[#]() [#command line basics]() [#]()
-
-<!------------------------------------------------------------------------------------------- -->
-
-## ?
-
-[#]() [#command line basics]() [#]()
-
-<!------------------------------------------------------------------------------------------- -->
-
-## ?
-
-[#]() [#command line basics]() [#]()
-
-<!------------------------------------------------------------------------------------------- -->
-
-\*\*\* ADD TO
-
-**_: A way to filter out low quality rhetoric and sustain high quality conversation and critical and or substantive dialogue; for example, repeated rhetorical devices and or argument tropes and debate tactic cliches. Could it be an upvote/downvote system? Too easuly gameable for tribes in its simplest form. What about ... a bot or hardcoded dict that assesses language and categorizes part of sentences/,essages/responses, assessing for those lowest quality things, that could actually be encodeable? New words and language would have to be regularly added. THAT'S AN INTERESTING PROJECT. _**

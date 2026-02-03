@@ -1,55 +1,50 @@
-# macOS_shortcuts
+# vs_code_shortcuts
 
 <!------------------------------------------------------------------------------------------- -->
 
-## Shorcut to open devtools in browsers?
+## Focus on file explorer specifically (file tree etc)?
 
-Cmd + Option + I
+Cmd + Shift + E
 
 [#macOS]() [#devtools]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## Toggle full screen?
+## Focus on integrated terminal?
 
-Ctrl + Cmnd + F
+Ctrl + Backtick
 
 [#macOS]() [#minimize]() [#managing windows]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## Send current window to dock?
+## Focus on sidebar?
 
-Cmnd + M
+Cmnd + 0
 
 [#macOS]() [#f]() [#]() [#]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## Show all windows of current app?
+## Focus on editor?
 
-Ctrl + Down Arrow
+Cmnd + 1
+
+[#macOS]() [#f]() [#]() [#]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## Toggle word/text wrapping in editor:
+
+Alt/Opt + Z
 
 [#macOS]() [#]() [#]() [#]()
 
 <!------------------------------------------------------------------------------------------- -->
-## Hide all windows of current app?
 
-Cmnd + H
+## Making a comment in code?
 
-[#macOS]() [#]() [#]() [#]()
-
-<!------------------------------------------------------------------------------------------- -->
-## ?
-
-
-
-[#macOS]() [#]() [#]() [#]()
-
-<!------------------------------------------------------------------------------------------- -->
-## ?
-
-
+Cmnd + /
 
 [#macOS]() [#]() [#]() [#]()
 

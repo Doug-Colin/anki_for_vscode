@@ -1,3 +1,5 @@
+# introduction_to_html
+
 ## What does HTML stand for?
 
 Hyper Text Markup Language
@@ -454,7 +456,11 @@ The `height` and `width` attributes.
 %
 The `alt` attribute should always be set so that screen readers can describe images to visually impaired users.
 
-Example: `<img src="./assets/images/meteor_hitting_orphanage.jpg" alt="A wood-framed orphanage bursting into splinters and flame at the moment of a meteor's impact">
+Example:
+
+```
+<img src="./assets/images/meteor_hitting_orphanage.jpg" alt="A wood-framed orphanage bursting into splinters and flame at the moment of a meteor's impact">
+```
 
 [#HTML]() [#fundamentals]() [#images]() [#<img>]() [#imagetag]()
 

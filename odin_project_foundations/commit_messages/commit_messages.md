@@ -1,6 +1,4 @@
-# Commit Messages
-
-<!------------------------------------------------------------------------------------------- -->
+# commit_messages.md
 
 ## What are the two separate parts that make up an effective commit?
 
@@ -79,9 +77,8 @@ By using the command `git commit -m "<message here>"`
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What command displyas the history of commits, including the subjects and bodies of commit messages?
+## What command displays the history of commits, including the subjects and bodies of commit messages?
 
-%
 `git log`
 
 [#Git]() [#commits]() [#commit message]()

@@ -1,12 +1,10 @@
-# Foundations: Command Line Basics
-
-!------------------------------------------------------------------------------------------- -->"
+# command_line_basics
 
 ## What is a shell?
 
 A shell is a command interpreter and scripting environment for interacting with the OS via CLI (Command Line Interface).
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -14,15 +12,15 @@ A shell is a command interpreter and scripting environment for interacting with 
 
 A CLI (Command Line Interface) is any text or command based computer interface; whereas a shell is a program that, while used via CLI, is specifically for interacting with Operating Systems via commands and scripts.
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
 ## What are the advantages of a shell?
 
-The main advatages of using a shell are a high keystroke-to-action ratio, support for automating repetitive tasks via scripts, and the capacity to access networked machines.
+The main advantages of using a shell are a high keystroke-to-action ratio, support for automating repetitive tasks via scripts, and the capacity to access networked machines.
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -30,7 +28,7 @@ The main advatages of using a shell are a high keystroke-to-action ratio, suppor
 
 When "/" appears at the front of a file or dir name, it refers to the root directory. When "/" appears within a path, however, it is simply a separator.
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -38,7 +36,7 @@ When "/" appears at the front of a file or dir name, it refers to the root direc
 
 Use short abbreviated command options when working in the shell and long or full command options when writing scripts.
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -46,7 +44,7 @@ Use short abbreviated command options when working in the shell and long or full
 
 Adding `--help` to a command will display helpful information, while adding `man` will display a scrollable manual for that command in the CLI; for example `ls --help` or `man ls`
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -59,7 +57,7 @@ Adding `--help` to a command will display helpful information, while adding `man
 - Search for a string: `/<search string>`
 - Navigate string search matches: N (forward) and Shift+N (backward).
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -68,7 +66,7 @@ Adding `--help` to a command will display helpful information, while adding `man
 %
 Simply add the directory path to the command after ls; for example `ls Desktop/dev/projects` will list the contents of `Desktop/dev/projects` no matter the current working directory.
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -76,7 +74,7 @@ Simply add the directory path to the command after ls; for example `ls Desktop/d
 
 The tilde character at the start of a path indicates the home directory of the current user; for example `~/Desktop/dev/projects` is the same as `/Users/doug/Desktop/dev/projects`.
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -84,7 +82,7 @@ The tilde character at the start of a path indicates the home directory of the c
 
 The dash character can be used to navigate between current and previous directory via `cd -`.
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -92,7 +90,7 @@ The dash character can be used to navigate between current and previous director
 
 Command `cd ..` shifts up a directory, while `cd -` shifts back to whatever the previous working directory was.
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -101,7 +99,7 @@ Command `cd ..` shifts up a directory, while `cd -` shifts back to whatever the 
 %
 Short shell command options are preceded by a single dash, whereas long shell command options are preceded by two dashes; for example `npm -v` versus `npm --version`.
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -109,7 +107,7 @@ Short shell command options are preceded by a single dash, whereas long shell co
 
 An absolute path specifies a location from the root of the file system, whereas a relative path specifies a location from the current working directoy.
 
-[#]() [#command line basics]() [#shell]()
+[#command line basics]() [#shell]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -117,7 +115,7 @@ An absolute path specifies a location from the root of the file system, whereas 
 
 . signifies 'current directory' whereas .. signifies 'directory above current'.
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -125,7 +123,7 @@ An absolute path specifies a location from the root of the file system, whereas 
 
 By surrounding the file or directory name with single quotes.
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -133,7 +131,7 @@ By surrounding the file or directory name with single quotes.
 
 The `-R` option or flag can be used with the list command `ls` to display all nested subdirs.
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -154,7 +152,7 @@ For Example:
 
 Using the move command: `mv path/<filename> /path/<newfilename>` and the
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -162,7 +160,7 @@ Using the move command: `mv path/<filename> /path/<newfilename>` and the
 
 Using the move command: `mv path/<filename> /new_path/<filename>`.
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -170,15 +168,7 @@ Using the move command: `mv path/<filename> /new_path/<filename>`.
 
 The copy command `cp` is used to copy a file or directory.
 
-[#]() [#command line basics]() [#]()
-
-<!------------------------------------------------------------------------------------------- -->
-
-## What shell command can be used to copy a file or directory?
-
-The copy command `cp` is used to copy a file or directory.
-
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -186,7 +176,7 @@ The copy command `cp` is used to copy a file or directory.
 
 The copy command `cp` accepts `<file_to_copy>.ext` and `/destination_path` or `/destination_path/name_of_copy.ext`
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -194,7 +184,7 @@ The copy command `cp` accepts `<file_to_copy>.ext` and `/destination_path` or `/
 
 The recursive flag `-R` must be used when `cp` copying directories.
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -202,7 +192,7 @@ The recursive flag `-R` must be used when `cp` copying directories.
 
 The remove, or `rm` command can be used to delete files; for example., `rm filenmae.ext`
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -222,7 +212,7 @@ Tags: [#shell]() [#unix]() [#flags]() [#command line basics]()
 
 Wildcards are special characters used for pattern matching filenames.
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -247,7 +237,7 @@ Exactly one character.
 Examples:
 `file?.txt` matches file1.txt and fileA.txt but not file or file12.txt.
 
-[#shell]() [#command line basics]() [#]()
+[#shell]() [#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -295,7 +285,7 @@ rm temp*        # remove all files starting with "temp"
 cp *.js backup/ # copy all files ending in .js to dir backup/
 ```
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -303,6 +293,14 @@ cp *.js backup/ # copy all files ending in .js to dir backup/
 
 Yes.
 
-[#]() [#command line basics]() [#]()
+[#command line basics]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## How can you view the contents of directories above the current one?
+
+`ls ../`; for directories further up simply chain `../` a la `ls ../../` etc
+
+[#command line basics]()
 
 <!------------------------------------------------------------------------------------------- -->

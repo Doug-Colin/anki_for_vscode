@@ -1,10 +1,8 @@
 <!------------------------------------------------------------------------------------------- -->
 
-## _macOS: shortcuts/keybindings_
+## Shortcut to open devtools in browsers?
 
-Shortcut to open devtools in browsers?
-
-<!-- notecardId: 1770135182901 -->
+<!-- notecardId: 1770140197565 -->
 
 %
 Cmd + Option + I
@@ -13,11 +11,9 @@ Cmd + Option + I
 
 <!------------------------------------------------------------------------------------------- -->
 
-## _macOS: shortcuts/keybindings_
+## Toggle full screen?
 
-Toggle full screen?
-
-<!-- notecardId: 1770135182903 -->
+<!-- notecardId: 1770140197566 -->
 
 %
 Ctrl + Cmnd + F
@@ -26,11 +22,9 @@ Ctrl + Cmnd + F
 
 <!------------------------------------------------------------------------------------------- -->
 
-## _macOS: shortcuts/keybindings_
+## Send current window to dock?
 
-Send current window to dock?
-
-<!-- notecardId: 1770135182905 -->
+<!-- notecardId: 1770140197568 -->
 
 %
 Cmnd + M
@@ -39,11 +33,9 @@ Cmnd + M
 
 <!------------------------------------------------------------------------------------------- -->
 
-## _macOS: shortcuts/keybindings_
+## Show all windows of current app?
 
-Show all windows of current app?
-
-<!-- notecardId: 1770135182906 -->
+<!-- notecardId: 1770140197569 -->
 
 %
 Ctrl + Down Arrow
@@ -52,11 +44,9 @@ Ctrl + Down Arrow
 
 <!------------------------------------------------------------------------------------------- -->
 
-## _macOS: shortcuts/keybindings_
+## Hide all windows of current app?
 
-Hide all windows of current app?
-
-<!-- notecardId: 1770135182907 -->
+<!-- notecardId: 1770140197570 -->
 
 %
 Cmnd + H

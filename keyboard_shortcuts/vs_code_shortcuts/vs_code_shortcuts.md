@@ -1,51 +1,99 @@
-# vs_code_shortcuts
-
 <!------------------------------------------------------------------------------------------- -->
 
-## Focus on file explorer specifically (file tree etc)?
+## Focus file explorer sidebar specifically?
 
+<!-- notecardId: 1770140383120 -->
+
+%
 Cmd + Shift + E
 
-[#macOS]() [#devtools]()
+[#vscode]() [#shortcuts]() [#keybindings]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## Focus on integrated terminal?
+## Focus integrated terminal?
 
+<!-- notecardId: 1770140383121 -->
+
+%
 Ctrl + Backtick
 
-[#macOS]() [#minimize]() [#managing windows]()
+[#vscode]() [#shortcuts]() [#keybindings]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## Focus on sidebar?
+## Focus entire sidebar?
 
+<!-- notecardId: 1770140383123 -->
+
+%
 Cmnd + 0
 
-[#macOS]() [#f]() [#]() [#]()
+[#vscode]() [#shortcuts]() [#keybindings]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## Focus on editor?
+## Focus editor?
 
+<!-- notecardId: 1770140383124 -->
+
+%
 Cmnd + 1
 
-[#macOS]() [#f]() [#]() [#]()
+[#vscode]() [#shortcuts]() [#keybindings]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## Toggle word/text wrapping in editor:
+## Toggle word wrapping in editor?
 
+<!-- notecardId: 1770140383125 -->
+
+%
 Alt/Opt + Z
 
-[#macOS]() [#]() [#]() [#]()
+[#vscode]() [#shortcuts]() [#keybindings]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## Making a comment in code?
+## Make a code comment?
 
+<!-- notecardId: 1770140383126 -->
+
+%
 Cmnd + /
 
-[#macOS]() [#]() [#]() [#]()
+[#vscode]() [#shortcuts]() [#keybindings]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## Place cursor at _all_ instances of highlighted selection?
+
+<!-- notecardId: 1770140383128 -->
+
+%
+Cmnd + Shift + L
+[#vscode]() [#cursor management]() [#shortcuts]() [#keybindings]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## Place cursor at next instance of highlighted selection, cumulatively?
+
+<!-- notecardId: 1770140383129 -->
+
+%
+Cmnd + D
+
+[#vscode]() [#cursor management]() [#shortcuts]() [#keybindings]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## Deselect cursor placement at occurrence of highlighted selection while proceeding cumulatively via Cmnd+D?
+
+<!-- notecardId: 1770140383130 -->
+
+%
+Cmnd + K
+
+[#vscode]() [#cursor management]() [#shortcuts]() [#keybindings]()
 
 <!------------------------------------------------------------------------------------------- -->

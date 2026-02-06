@@ -4,6 +4,8 @@
 
 ## What's the difference between Git and GitHub?
 
+<!-- notecardId: 1770140550921 -->
+
 Git is a version control system that runs locally on your machine, whereas GitHub is a Microsoft-owned cloud platform for remotely hosting, sharing, and collaborating on Git repositories.
 
 [#Git]() [#Github]() [#version control]()
@@ -11,6 +13,8 @@ Git is a version control system that runs locally on your machine, whereas GitHu
 <!------------------------------------------------------------------------------------------- -->
 
 ## What is checksumming?
+
+<!-- notecardId: 1770140550923 -->
 
 %
 Checksumming is a method for detecting changes in data by running it through one-way deterministic hash-generating algorithms; the hashes (or 'checksums') are compared against each other over time to identify if and when changes were made.
@@ -21,6 +25,8 @@ Checksumming is a method for detecting changes in data by running it through one
 
 ## What is the difference between checksumming and encryption?
 
+<!-- notecardId: 1770140550924 -->
+
 %
 Checksumming uses one-way hashing to detect changes by comparing hashes, whereas encryption is two-way and reversible.
 
@@ -30,6 +36,8 @@ Checksumming uses one-way hashing to detect changes by comparing hashes, whereas
 
 ## What are the three main states, or statuses, of your files in Git?
 
+<!-- notecardId: 1770140550925 -->
+
 Modified, staged, and committed.
 
 [#]() [#]() [#]()
@@ -37,6 +45,8 @@ Modified, staged, and committed.
 <!------------------------------------------------------------------------------------------- -->
 
 ## What does it mean if a file's Git status modified?
+
+<!-- notecardId: 1770140550926 -->
 
 That you have changed a file but not yet committed it to your database.
 
@@ -46,6 +56,8 @@ That you have changed a file but not yet committed it to your database.
 
 ## What does it mean if a file's Git status is staged?
 
+<!-- notecardId: 1770140550927 -->
+
 That you have marked the current version of a modified file for your next commit snapshot.
 
 [#]() [#]() [#]()
@@ -53,6 +65,8 @@ That you have marked the current version of a modified file for your next commit
 <!------------------------------------------------------------------------------------------- -->
 
 ## What does it mean if a file's Git status is committed?
+
+<!-- notecardId: 1770140550928 -->
 
 That modified file is safely stored in your local database.
 
@@ -62,6 +76,8 @@ That modified file is safely stored in your local database.
 
 ## What are the three main sections of a Git project?
 
+<!-- notecardId: 1770140550929 -->
+
 The working tree (or working directory), the staging area, and the .git directory.
 
 [#]() [#]() [#]()
@@ -69,6 +85,8 @@ The working tree (or working directory), the staging area, and the .git director
 <!------------------------------------------------------------------------------------------- -->
 
 ## What is the working tree or working directory?
+
+<!-- notecardId: 1770140550930 -->
 
 The working tree, or working directory, is a single checkout of one version of your Git project.
 
@@ -78,6 +96,8 @@ The working tree, or working directory, is a single checkout of one version of y
 
 ## What is the staging area?
 
+<!-- notecardId: 1770140550931 -->
+
 The staging area is the index file in your Git directory that stores info about what will go into your next commit.
 
 [#]() [#]() [#]()
@@ -85,6 +105,8 @@ The staging area is the index file in your Git directory that stores info about 
 <!------------------------------------------------------------------------------------------- -->
 
 ## What is the .git directory?
+
+<!-- notecardId: 1770140550932 -->
 
 The .git directory is where Git stores the metadata and object database for your project; this is what is copied when you clone a repo from another computer.
 
@@ -94,6 +116,8 @@ The .git directory is where Git stores the metadata and object database for your
 
 ## What does the term 'origin' mean in Git?
 
+<!-- notecardId: 1770140550933 -->
+
 The Git origin refers to the remote repository from which 'upstream' changes are pulled.
 
 [#]() [#]() [#]()
@@ -101,6 +125,8 @@ The Git origin refers to the remote repository from which 'upstream' changes are
 <!------------------------------------------------------------------------------------------- -->
 
 ## How can you use the VS Code editor window to write your Git commit messages?
+
+<!-- notecardId: 1770140550934 -->
 
 By typing command `git commit` into the terminal and pressing enter; here you can write multi-line commits. Save via Cmd+S and close the editor window/tab.
 

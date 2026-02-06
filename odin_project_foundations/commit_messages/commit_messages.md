@@ -2,6 +2,8 @@
 
 ## What are the two separate parts that make up an effective commit?
 
+<!-- notecardId: 1770140542799 -->
+
 %
 A subject and a body.
 
@@ -10,6 +12,8 @@ A subject and a body.
 <!------------------------------------------------------------------------------------------- -->
 
 ## What should the subject, or first line, of an an effective commit message include?
+
+<!-- notecardId: 1770140542801 -->
 
 %
 A brief summary of the change you made to the project.
@@ -22,6 +26,8 @@ Example:
 <!------------------------------------------------------------------------------------------- -->
 
 ## What should the body of an an effective commit message include?
+
+<!-- notecardId: 1770140542802 -->
 
 %
 A concise and clear explanation of why the commit needed to be made; essentially The body of a commit message should describe the problem your commit solves.
@@ -41,6 +47,8 @@ Screen readers won't read the images to users with disabilities without this inf
 
 ## What's the simplest way to write a multi-line commit with a subject and body?
 
+<!-- notecardId: 1770140542803 -->
+
 %
 By typing command `git commit` into the terminal and pressing enter.
 
@@ -59,6 +67,8 @@ By closing the editor window.
 
 ## When is it okay to write a single line commit message?
 
+<!-- notecardId: 1770140542805 -->
+
 %
 When your changes are simple and don't require further explanation.
 
@@ -70,6 +80,8 @@ Example: `Fix typo in introduction to user guide.`
 
 ## How can you quickly write a simple, single line commit message?
 
+<!-- notecardId: 1770140542806 -->
+
 %
 By using the command `git commit -m "<message here>"`
 
@@ -79,6 +91,8 @@ By using the command `git commit -m "<message here>"`
 
 ## What command displays the history of commits, including the subjects and bodies of commit messages?
 
+<!-- notecardId: 1770140542807 -->
+
 `git log`
 
 [#Git]() [#commits]() [#commit message]()
@@ -86,6 +100,8 @@ By using the command `git commit -m "<message here>"`
 <!------------------------------------------------------------------------------------------- -->
 
 ## ## What command displays the history of commits, and shows only the subject and not body of commit messages?
+
+<!-- notecardId: 1770140542808 -->
 
 %
 `git log --oneline`
@@ -96,6 +112,8 @@ By using the command `git commit -m "<message here>"`
 
 ## What command displays commit history grouped by author?
 
+<!-- notecardId: 1770140542809 -->
+
 %
 `git shortlog`
 
@@ -104,6 +122,8 @@ By using the command `git commit -m "<message here>"`
 <!------------------------------------------------------------------------------------------- -->
 
 ## Should commit messages start with lowercase or uppercase letters?
+
+<!-- notecardId: 1770140542810 -->
 
 %
 Always start a commit message by capitalizing the first letter of the first word.
@@ -122,6 +142,8 @@ Always start a commit message by capitalizing the first letter of the first word
 
 ## Should the subject line of Git commit messages end in a period?
 
+<!-- notecardId: 1770140542812 -->
+
 %
 No, never end a commit message subject line with a period.
 
@@ -130,6 +152,8 @@ No, never end a commit message subject line with a period.
 <!------------------------------------------------------------------------------------------- -->
 
 ## What voice or mood should be used in Git commit message subject lines?
+
+<!-- notecardId: 1770140542813 -->
 
 %
 The imperative mood, meaning speak or write as if commanding someone.
@@ -144,6 +168,8 @@ Example:
 <!------------------------------------------------------------------------------------------- -->
 
 ## Why should the imperative mood be used in Git commit messages?
+
+<!-- notecardId: 1770140542814 -->
 
 %
 Because Git uses the imperative mood when it automatically creates commit message subject lines for `git merge`, `git revert`, and other commands.
@@ -165,6 +191,8 @@ This reverts commit cc87791524aedd593cff5a74532befe7ab69ce9d.
 
 ## Should the imperative mood be used in Git commit subject lines and bodies?
 
+<!-- notecardId: 1770140542815 -->
+
 %
 No, the use of the imperative mood is crucial in commit message subject lines, but it is not necessary in the body of commit messages.
 
@@ -174,6 +202,8 @@ No, the use of the imperative mood is crucial in commit message subject lines, b
 
 ## How can you ensure that commit messages
 
+<!-- notecardId: 1770140542816 -->
+
 %
 
 [#Git]() [#commits]() [#commit message]()
@@ -181,6 +211,8 @@ No, the use of the imperative mood is crucial in commit message subject lines, b
 <!------------------------------------------------------------------------------------------- -->
 
 ## Should the body of commit messages explain how you changed things?
+
+<!-- notecardId: 1770140542817 -->
 
 %
 No, commit messages should explain what you changed and why you changed it, now how. How code changed is obvious from looking at a diff, and if it is complex enough to warrant comment, the comments should be made inline in code.
@@ -191,6 +223,8 @@ No, commit messages should explain what you changed and why you changed it, now 
 
 ## How many charaters should a commit message's subject line be?
 
+<!-- notecardId: 1770140542818 -->
+
 %
 <= 50 characters ideally, 72 char absolute limit.
 
@@ -199,6 +233,8 @@ No, commit messages should explain what you changed and why you changed it, now 
 <!------------------------------------------------------------------------------------------- -->
 
 ## What are the seven rules of a good git commit message?
+
+<!-- notecardId: 1770140542819 -->
 
 %
 
@@ -215,6 +251,8 @@ No, commit messages should explain what you changed and why you changed it, now 
 <!------------------------------------------------------------------------------------------- -->
 
 ## In one sentence, what are the seven rules of a good git commit message?
+
+<!-- notecardId: 1770140542820 -->
 
 %
 Capitalized, periodless, imperative-mood subject line <= 50 chars that's blank-line separated from a body wrapped at 72 chars, explaining _what_ and _why_ rather than _how_.

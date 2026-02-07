@@ -25,9 +25,12 @@ HTML is used to define the structure and content of webpages.
 <!-- notecardId: 1770140554498 -->
 
 %
-HTML tags are the markup syntax defining the beginning and end of HTML elements.
+The markup syntax delimiting html elements.
 
-Examples: `<head></head>, <p></p>. <span></span>` etc.
+Examples:
+`<head></head>`
+`<p></p>`
+`<span></span>`
 
 [#HTML]() [#fundamentals]()
 
@@ -48,7 +51,7 @@ Using HTML tags that describe the meaning of content (e.g., `<header>, <article>
 
 <!-- notecardId: 1770140554500 -->
 
-No, some elements only have opening tags, such as <br> and <img>.
+No, some elements only have opening tags, such as `<br>` and `<img>`.
 
 [#HTML]() [#fundamentals]()
 
@@ -58,7 +61,9 @@ No, some elements only have opening tags, such as <br> and <img>.
 
 <!-- notecardId: 1770140554501 -->
 
-Void elements are HTML elements without closing tags- for example <br> and <img>.
+Elements without closing tags.
+
+Example: `<br>` and `<img>`.
 
 [#HTML]() [#fundamentals]()
 
@@ -159,7 +164,10 @@ The `<head>` element contains metadata about a webpage.
 <!-- notecardId: 1770140554511 -->
 
 %
-By pasting your HTML into an HTML Validator like the W3 markup validation service.  
+By passing it through an HTML Validator.
+
+Example:
+The W3 markup validation service.  
 https://validator.w3.org/#validate_by_input
 
 [#HTML]() [#fundamentals]()
@@ -170,7 +178,7 @@ https://validator.w3.org/#validate_by_input
 
 <!-- notecardId: 1770140554512 -->
 
-The HTML `<body>`element is where all the user-displayed content goes.
+The parent element for all page content.
 
 [#HTML]() [#fundamentals]()
 
@@ -211,10 +219,12 @@ Six, `<h1>` through `<h6>`.
 <!-- notecardId: 1770140554516 -->
 
 %
-When content has strong importance, seriousness, or urgency.
+Use <strong> for warnings and critical emphasis; use CSS when in doubt.
 
-For example: <strong>Warning:</strong> Cannot be undone.
-Screen readers announce anything within a <strong> tag with emphasis.
+For example:
+`<strong>Warning:</strong> <span>Cannot be undone.<span>`
+
+_Remember: Screen readers announce anything within a `<strong>` tag with emphasis._
 
 [#HTML]() [#fundamentals]() [#semantic html]() [#accessibility]()
 
@@ -351,8 +361,10 @@ If the `target` attribute is unset, an anchor link will open in the current brow
 
 <!-- notecardId: 1770140554528 -->
 
-By setting the anchor link's target attribute to "\_blank":
-`<a href="https://www.rainbows.com" target="_blank">`
+By setting attributes `target` to `_blank` and `rel` to `noreferrer`:
+
+Example:
+`<a href="https://www.rainbows.com" target="_blank" rel="noreferrer">`
 
 [#HTML]() [#fundamentals]() [#links]()
 
@@ -362,15 +374,15 @@ By setting the anchor link's target attribute to "\_blank":
 
 <!-- notecardId: 1770140554529 -->
 
-If you use `target="_blank"` to make links open in new tabs, you must also set the `rel` relationship attribute to `"noopener noreffer"`
+You must also set relationship attribute to `rel="noopener norefferer"` whenever making `<a>` links open in new tabs/windows.
 
-Example: `<a href="https://www.rainbows.com" target="_blank" rel="noopener noreffer">`
+Example: `<a href="https://www.rainbows.com" target="_blank" rel="noopener norefferer">`
 
 [#HTML]() [#fundamentals]() [#links]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## Why must you set the relationship attribute to `rel="noopener noreffer"` on an anchor tag link whenever using `target="_blank"` so that it opens in a new tab?
+## Why must you set the relationship attribute to `rel="noopener norefferer"` or simply `rel="norefferer"` on an anchor tag link whenever using `target="_blank"` so that it opens in a new tab?
 
 <!-- notecardId: 1770140554530 -->
 
@@ -396,7 +408,7 @@ The rel attribute describes the relationship and permissions between the current
 <!-- notecardId: 1770140554532 -->
 
 %
-rel="noopener" prevents a newly opened page from accessing or manipulating the original page via JavaScript.
+Prevents pages opened in new tabs/windows from accessing/manipulating the original via the JS `window.opener` object.
 
 [#HTML]() [#fundamentals]() [#links]()
 
@@ -407,7 +419,7 @@ rel="noopener" prevents a newly opened page from accessing or manipulating the o
 <!-- notecardId: 1770140554533 -->
 
 %
-rel="noreferrer" prevents the new page from seeing the referrer URL and also blocks access to the original page.
+Prevents the new page linked to via `<a target="_blank>` from seeing the referring URL/blocks access to the original page.
 
 [#]() [#]() [#]()
 
@@ -429,7 +441,9 @@ noreferrer includes the security behavior of noopener and also adds referrer pri
 <!-- notecardId: 1770140554535 -->
 
 %
-Tabnabbing is an attack where a page opened in a new tab changes the original page to a malicious one.
+An attack where a page opened in a new tab/window redirects the referring page to a malicious one.
+
+Example: A link that opens in a new page checks if you're coming from citibank.com and uses the JS `window.opener` object to redirect the referring page to citibank.co.ru for phishing.
 
 [#HTML]() [#fundamentals]() [#links]() [#security]()
 
@@ -439,7 +453,7 @@ Tabnabbing is an attack where a page opened in a new tab changes the original pa
 
 <!-- notecardId: 1770140554536 -->
 
-An absolute HTML link points to a resource using a full URL (protocol + domain) and resolves independently of the current page's URL or location.
+Absolute links use full URLs and resolve independently of the current URL/path.
 
 Example: `<a href="https://example.com/pages/site_glossary.html">`
 
@@ -549,12 +563,12 @@ The `height` and `width` attributes.
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What attribute must always be set on `img` tags for accessibility?
+## What attribute must always be set on `img` tags for accessibility, and why?
 
 <!-- notecardId: 1770140554545 -->
 
 %
-The `alt` attribute should always be set so that screen readers can describe images to visually impaired users.
+The `alt` attribute must always be set, because that's how screen readers describe images to the visually impaired.
 
 Example:
 
@@ -615,7 +629,8 @@ The PNG format is designed for images that need transparency, and should be used
 <!-- notecardId: 1770140554550 -->
 
 %
-The SVG format is designed for icons, logos, and diagrams and should be used whenever you need an image scale without losing quality.
+SVG is designed for icons, logos, and diagrams>
+Use if you need to maintain image quality while scaling.
 
 [#HTML]() [#fundamentals]() [#images]() [#<img>]() [#imagetag]() [#svg]()
 
@@ -637,7 +652,10 @@ SVG image format should be avoided for any text-heavy images.
 <!-- notecardId: 1770140554552 -->
 
 %
-The `figure` element is for diagrams and figures that explain something.
+Use `<figure>` for explanatory diagrams and images ' _discussed in the page content_.
+
+Good rule: _If an image needs a caption, it's a figure, not decorative_
+
 [#HTML]() [#fundamentals]() [#figure]()
 
 <!------------------------------------------------------------------------------------------- -->
@@ -647,7 +665,7 @@ The `figure` element is for diagrams and figures that explain something.
 <!-- notecardId: 1770140554553 -->
 
 %
-The `<figcaption>` element is for captions to any diagrams or expanatory images in a `<figure>` tag.
+The `<figcaption>` element is for captioning explanatory diagrams/images in the `<figure>` tag.
 [#HTML]() [#fundamentals]() [#figure]() [#figcaption]()
 
 <!------------------------------------------------------------------------------------------- -->
@@ -657,15 +675,14 @@ The `<figcaption>` element is for captions to any diagrams or expanatory images 
 <!-- notecardId: 1770140554554 -->
 
 %
-Entities are text codes used for representing characters the browser can't interpret HTML content.
+Text codes used to represent characters the browser can't see as page content.
 
 For Example:
-The browser cannot interpret characters `<`, `>`, and `&` because it reads them as HTML syntax.
-So if you need to make a web page with a sentencethat uses the less than (`<`), greater than (`>`), or ampersand (`&`) characters, you have to describe those characters to the browser as HTML entities.
+Browsers read `<`, `>`, and `&` chars as HTML syntax, and can't see them as page content.
 
-```
-<p>In this parapgraph I will talk about the characters used to signify 'less than' and 'greater than'; &<; and &>; </p>
-```
+Example:
+HTML markup: `<p>This paragraph discusses the 'less than' and 'greater than' chars &<; and &>; </p>`
+Output: <p>This paragraph discusses the 'less than' and 'greater than' chars &<; and &>; </p>
 
 [#HTML]() [#fundamentals]()
 
@@ -676,7 +693,9 @@ So if you need to make a web page with a sentencethat uses the less than (`<`), 
 <!-- notecardId: 1770140554555 -->
 
 %
-To escape reserved characters (like <, >, &) and to represent special or hard-to-type characters (especially invisible ones like &nbsp;).
+
+1. Escaping reserved characters (`&lt;`, `&gt;`, `&amp;` for <, >, &)
+2. Displaying special characters (`&copy;` for © or `&nbsp;` for non-breaking space)
 
 [#HTML]() [#fundamentals]() [#entity]() [#reserved]()
 
@@ -740,3 +759,33 @@ You can set the default language of a web page via the `<html>` element's `lang`
 [#HTML]() [#fundamentals]()
 
 <!------------------------------------------------------------------------------------------- -->
+
+## Are HTML tags and HTML elements the same thing?
+
+<!-- notecardId: 1770427349588 -->
+
+No, tags are only elements' delimiting syntax, whereas elements include the tags _and_ content.
+
+<!------------------------------------------------------------------------------------------- -->
+
+## What are the syntax rules of `class=""` attribute values?
+
+<!-- notecardId: 1770429736387 -->
+
+Always use hyphens, not spaces, to separate multi-word values, as spaces are used to apply multiple class attribute values to elements.
+
+Example:
+
+```html
+<strong>
+  <span class="alert-text severe-alert">FLASH FLOOD WARNING</span>
+</strong>
+```
+
+<!------------------------------------------------------------------------------------------- -->
+
+## Can the values of the `class=""` or `id=""` attributes start with numbers?
+
+<!-- notecardId: 1770429736389 -->
+
+No, never start `class=""` or `id=""` attribute values with numbers, because values starting with numbers cant be used as CSS selectors.

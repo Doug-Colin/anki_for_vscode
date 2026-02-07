@@ -40,10 +40,11 @@ Examples:
 
 <!-- notecardId: 1770140554499 -->
 
-Using HTML tags that describe the meaning of content (e.g., `<header>, <article>, <nav>`) instead of generic tags like `<div>` or `<span>`.
-#html #accessibility
+Using HTML tags that describe content's role or purpose in the document's structure, instead of generic tags like `<div>` or `<span>`.
 
-[#HTML]() [#fundamentals]()
+_Remember: semantic HTML a the foundation of HTML best-practices._
+
+[#HTML]() [#fundamentals]() [#accessibility]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -139,7 +140,7 @@ HTML5.
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What is the `lang` attribute of the `<html>` element?
+## What is the `lang` attribute used for?
 
 <!-- notecardId: 1770140554509 -->
 
@@ -184,11 +185,11 @@ The parent element for all page content.
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What are the HTML heading element?
+## What are the HTML heading elements?
 
 <!-- notecardId: 1770140554513 -->
 
-HTML heading elements display their content larger and bolder to signfiy that they are headings.
+Heading elements signify headings by displaying content larger and bolder.
 
 [#HTML]() [#fundamentals]()
 
@@ -235,7 +236,7 @@ _Remember: Screen readers announce anything within a `<strong>` tag with emphasi
 <!-- notecardId: 1770140554517 -->
 
 %
-For text that should be visually bold without extra importance.
+For text that should be visually bold for screen readers, without voice emphasis (use `<em>`) or critical significance (use `<strong>`).
 
 Example:
 `<b>Product name:</b> Widget 3000` or keywords in a document.
@@ -244,16 +245,16 @@ Example:
 
 <!------------------------------------------------------------------------------------------- -->
 
-## When should you use the italic emphasis tag, `<em>`?
+## When should you use the emphasis tag, `<em>`?
 
 <!-- notecardId: 1770140554518 -->
 
 %
-For stressed emphasis that changes sentence meaning.
+Use the `<em>` tag for any text that you'd emphasize when reading aloud, as it changes how screen readers announce it.
 
 For Example: I <em>really</em> need this.
 
-Note: Screen readers use vocal stress; typically renders as italic.
+_Note_: Screen readers use vocal stress; typically renders as italic, though changeable by CSS.
 
 [#HTML]() [#fundamentals]() [#semantic html]() [#accessibility]()
 
@@ -264,10 +265,12 @@ Note: Screen readers use vocal stress; typically renders as italic.
 <!-- notecardId: 1770140554519 -->
 
 %
-The `<strong>` tag indicates importance or urgency (semantic meaning).
-The `<b>` tag is for visual styling without implying importance.
+The `<strong>` tag indicates importance or urgency to devices and systems.
+The `<b>` tag is for visual styling, not importance.
 
-Use <strong> when content matters more, <b> for visual offset only.
+Use <strong> for warnings and urgency, <b> for visual offset only.
+
+_Note_: Many developers just use CSS for everything boldface and use `<strong>` only when importance matters.
 
 [#HTML]() [#fundamentals]() [#semantic html]() [#accessibility]()
 
@@ -314,7 +317,7 @@ The anchor element, `<a></a>`.
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What attribute must be set on the anchor element's opening tag to ensure that it functions as a link?
+## What attribute must be set on the `<a>` element's opening tag to ensure that it functions as a link?
 
 <!-- notecardId: 1770140554524 -->
 
@@ -370,19 +373,20 @@ Example:
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What attribute must be set on the `<anchor>` element if you are setting the link to open in a new tab via `target="_blank`?
+## What attribute values must be set on the `<a>` element if you're setting the link to open in a new tab/page via `target="_blank`?
 
 <!-- notecardId: 1770140554529 -->
 
-You must also set relationship attribute to `rel="noopener norefferer"` whenever making `<a>` links open in new tabs/windows.
+The `rel=""` attribute must be set to values `rel="noopener noreferrer"`.
 
-Example: `<a href="https://www.rainbows.com" target="_blank" rel="noopener norefferer">`
+Example: `<a href="https://www.rainbows.com" target="_blank" rel="noopener noreferrer">`
+_Note: Today browsers mostly automate hits security behavior, but it's considered best practice to set both attributes anyway._
 
 [#HTML]() [#fundamentals]() [#links]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## Why must you set the relationship attribute to `rel="noopener norefferer"` or simply `rel="norefferer"` on an anchor tag link whenever using `target="_blank"` so that it opens in a new tab?
+## Why must you set the relationship attribute to `rel="noopener noreferrer"` or simply `rel="noreferrer"` on an anchor tag link whenever using `target="_blank"` so that it opens in a new tab?
 
 <!-- notecardId: 1770140554530 -->
 
@@ -392,12 +396,12 @@ Because not doing so can introduces security and privacy vulnerabilities.
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What is the purpose of the `<a>` element’s `rel=""` attribute?
+## What is the purpose of the `rel=""` attribute?
 
 <!-- notecardId: 1770140554531 -->
 
 %
-The rel attribute describes the relationship and permissions between the current page and the linked document.
+Defines relationships between current and linked resources and controls security and privacy.
 
 [#HTML]() [#fundamentals]() [#links]()
 
@@ -419,9 +423,11 @@ Prevents pages opened in new tabs/windows from accessing/manipulating the origin
 <!-- notecardId: 1770140554533 -->
 
 %
-Prevents the new page linked to via `<a target="_blank>` from seeing the referring URL/blocks access to the original page.
+Hides the user's origin from a newly opened page by preventing the browser from sending the `Referer` HTTP header; also includes `noopener` protection.
 
-[#]() [#]() [#]()
+_Note_: Yes, the HTTP header `Referer` is misspelled, a long-preserved typo in the spec.
+
+[#HTML]() [#fundamentals]() [#links]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -430,7 +436,7 @@ Prevents the new page linked to via `<a target="_blank>` from seeing the referri
 <!-- notecardId: 1770140554534 -->
 
 %
-noreferrer includes the security behavior of noopener and also adds referrer privacy.
+Using `noreferrer` includes the `noopener`'s security behavior _and_ adds referrer privacy.
 
 [#HTML]() [#fundamentals]() [#links]()
 
@@ -453,7 +459,7 @@ Example: A link that opens in a new page checks if you're coming from citibank.c
 
 <!-- notecardId: 1770140554536 -->
 
-Absolute links use full URLs and resolve independently of the current URL/path.
+A link that uses a full URL and resolves independently of current URL/path.
 
 Example: `<a href="https://example.com/pages/site_glossary.html">`
 
@@ -496,20 +502,21 @@ The leading `/` represents the the domain root, or root directory of a website.
 
 <!------------------------------------------------------------------------------------------- -->
 
-## When should relative, or document-relative, links be used?
+## When should relative, or document-relative, paths be used?
 
 <!-- notecardId: 1770140554540 -->
 
 %
-Use document-relative links for navigating to resources closely related to the current file, such as images and references such as footnotes.
+Use document-relative paths for navigating to resources closely related to the current file, such as images and references such as footnotes.
 
-Example: Linking to an image via `<img src="">` or
+Example: An `<img src="">` path:
 
-```
+```html
 <figure>
   <img
     src="/shared-assets/images/examples/elephant.jpg"
-    alt="Elephant at sunset" />
+    alt="Elephant at sunset"
+  />
   <figcaption>An elephant at sunset</figcaption>
 </figure>
 ```
@@ -559,7 +566,7 @@ When linking to internal pages within the same site.
 %
 The `height` and `width` attributes.
 
-[#HTML]() [#fundamentals]() [#images]() [#<img>]() [#imagetag]()
+[#HTML]() [#fundamentals]() [#images]() [#<img>]() [#image tag]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -576,7 +583,7 @@ Example:
 <img src="./assets/images/meteor_hitting_orphanage.jpg" alt="A wood-framed orphanage bursting into splinters and flame at the moment of a meteor's impact">
 ```
 
-[#HTML]() [#fundamentals]() [#images]() [#<img>]() [#imagetag]()
+[#HTML]() [#fundamentals]() [#images]() [#<img>]() [#image tag]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -587,7 +594,7 @@ Example:
 %
 The four main image formats used on the web are `JPG`, `GIF`, `PNG`, and `SVG`.
 
-[#HTML]() [#fundamentals]() [#images]() [#<img>]() [#imagetag]()
+[#HTML]() [#fundamentals]() [#images]() [#<img>]() [#image tag]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -598,7 +605,7 @@ The four main image formats used on the web are `JPG`, `GIF`, `PNG`, and `SVG`.
 %
 The JPG format is designed for photos and other images with large color palettes and gradients.
 
-[#HTML]() [#fundamentals]() [#images]() [#<img>]() [#imagetag]()
+[#HTML]() [#fundamentals]() [#images]() [#<img>]() [#image tag]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -609,7 +616,7 @@ The JPG format is designed for photos and other images with large color palettes
 %
 The GIF format is designed for simple animations with limited color palettes.
 
-[#HTML]() [#fundamentals]() [#images]() [#<img>]() [#imagetag]()
+[#HTML]() [#fundamentals]() [#images]() [#<img>]() [#image tag]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -620,7 +627,7 @@ The GIF format is designed for simple animations with limited color palettes.
 %
 The PNG format is designed for images that need transparency, and should be used for icons, logos, and diagrams.
 
-[#HTML]() [#fundamentals]() [#images]() [#<img>]() [#imagetag]()
+[#HTML]() [#fundamentals]() [#images]() [#<img>]() [#image tag]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -629,10 +636,9 @@ The PNG format is designed for images that need transparency, and should be used
 <!-- notecardId: 1770140554550 -->
 
 %
-SVG is designed for icons, logos, and diagrams>
-Use if you need to maintain image quality while scaling.
+SVG is designed for icons, logos, and diagrams; Use when needing image quality while scaling.
 
-[#HTML]() [#fundamentals]() [#images]() [#<img>]() [#imagetag]() [#svg]()
+[#HTML]() [#fundamentals]() [#images]() [#<img>]() [#image tag]() [#svg]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -643,7 +649,7 @@ Use if you need to maintain image quality while scaling.
 %
 SVG image format should be avoided for any text-heavy images.
 
-[#HTML]() [#fundamentals]() [#images]() [#<img>]() [#imagetag]() [#png]()
+[#HTML]() [#fundamentals]() [#images]() [#<img>]() [#image tag]() [#png]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -693,9 +699,11 @@ Output: <p>This paragraph discusses the 'less than' and 'greater than' chars &<;
 <!-- notecardId: 1770140554555 -->
 
 %
+To escape reserved characters and display special ones.
 
-1. Escaping reserved characters (`&lt;`, `&gt;`, `&amp;` for <, >, &)
-2. Displaying special characters (`&copy;` for © or `&nbsp;` for non-breaking space)
+Example:
+Escaping reserved characters (`&lt;`, `&gt;`, `&amp;` for <, >, &)
+Displaying special characters (`&copy;` for © or `&nbsp;` for non-breaking space)
 
 [#HTML]() [#fundamentals]() [#entity]() [#reserved]()
 
@@ -738,12 +746,14 @@ To display the ampersand character `&`: `&amp;`.
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What is the best practice to avoid images becoming low-res or 'blurry' on high-DPI (retina) screens?
+## What is the best practice to avoid _raster_ images becoming low-res or 'blurry' on high-DPI (retina) screens?
 
 <!-- notecardId: 1770140554559 -->
 
 %
-Use SVG images whenever possible, and make raster images responsive with attribute `srcset` so browsers on high-DPI displays can choose higher-res files.
+Use the `srcset` attribute to serve higher-resolution images to high-DPI displays.
+
+Remember: DPI is pixel _density_ (dots per inch); resolution is _total pixel count_.
 
 [#<img>]() [#HTML]() [#fundamentals]() [#images]() [#image tag]()
 
@@ -789,3 +799,29 @@ Example:
 <!-- notecardId: 1770429736389 -->
 
 No, never start `class=""` or `id=""` attribute values with numbers, because values starting with numbers cant be used as CSS selectors.
+
+<!------------------------------------------------------------------------------------------- -->
+
+## Besides <a> tags, where else is the `rel` attribute commonly used?
+
+On `<link>` elements in the `<head>` (e.g., rel="stylesheet", rel="icon", rel="canonical")
+
+_Remember_: The `rel=""` attribute is not only for for external links (`rel="noreferrer"`) but also internal metadata (`rel="stylesheet"`, `"preload"`) and document (`author`, `next`) links.
+
+<!------------------------------------------------------------------------------------------- -->
+
+## Is the `lang` attribute only used to specify an entire documents language via the `<html>` element?
+
+No, `lang` attribute specifies the language of any element's text content.
+
+_Remember_: It's primarily used in `<html>` but for screen readers, use it for indicating any distinct language changes.
+
+[#HTML]() [#fundamentals]() [#accessibility]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## When should you use `<em>` vs `<strong>`?
+
+Use `<em>` where you'd naturally stress words when speaking (`My dog <em>loves</em> treats`), and use `<strong>` for important or urgent information (`<strong>Warning: Flash Flood Alert</strong>`).
+
+<!------------------------------------------------------------------------------------------- -->

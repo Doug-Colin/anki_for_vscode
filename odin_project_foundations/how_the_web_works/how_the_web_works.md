@@ -6,7 +6,9 @@
 
 <!-- notecardId: 1770140547021 -->
 
-The internet is a largely decentralized network of computers initially developed in the mid to late 1960's as an experimental network for sharing computer resources across locations.
+A packet-switching decentralized network of computers.
+
+_Note_: Initially developed in the mid to late 1960's as an experimental network for sharing computer resources across locations.
 
 [#]() [#]() [#]()
 
@@ -17,7 +19,7 @@ The internet is a largely decentralized network of computers initially developed
 <!-- notecardId: 1770140547023 -->
 
 %
-The foundation of the internet; the first broad, packet-switching, distributed control, TCP/IP using network.
+The precursor to and foundation of the internet; ARPANET was the first wide-area, packet-switching, distributed control network using TCP/IP.
 
 ARPANET: _Advanced Research Projects Agency NETwork_
 ARPA: pre-DOD DARPA
@@ -40,17 +42,20 @@ Packet switching is a networking method where data is split into small packets t
 
 <!-- notecardId: 1770140547025 -->
 
-The small, formatted, multi-layered unit of data sent across the internet.
+The small unit by which data travels across the internet; packets are formatted in layers according to the protocols that standardize internet communications.
 
 [#]() [#]() [#]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What are the layers of a network packet?
+## What is packet encapsulation?
 
 <!-- notecardId: 1770140547026 -->
 
-A network packet is a stack of nested data units, with each layer containing a protocol-specific header and the previous layer as payload.
+Packet encapsulation refers to the nesting of packet data by protocol layer; each layer adds its header and wraps the layer above as payload, separating concerns (routing, reliability, delivery).
+
+Ethernet wraps IP, IP wraps TCP, TCP wraps application layer data.
+
 [#]() [#]() [#]()
 
 <!------------------------------------------------------------------------------------------- -->
@@ -70,8 +75,7 @@ No. Packet headers are network/transport layers (TCP/IP); HTTP headers are appli
 
 <!-- notecardId: 1770140547028 -->
 
-Lower level transport, network, and link-layer headers (TC/IP, Ethernet).
-
+The headers specified by lower-level protocols at the data link, network, and transport layers (e.g., Ethernet/Wi-Fi, IP, and TCP headers respectively).
 [#]() [#]() [#]()
 
 <!------------------------------------------------------------------------------------------- -->
@@ -80,7 +84,7 @@ Lower level transport, network, and link-layer headers (TC/IP, Ethernet).
 
 <!-- notecardId: 1770140547029 -->
 
-A router is a device that forwards packets between network nodes by IP address.
+A device that forwards packets between network nodes by IP address.
 
 [#]() [#]() [#]()
 
@@ -96,11 +100,14 @@ A modem translates data between computer-readable and telecom infrastructure for
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What is the difference between a web page, a website, a web app, and a web server?
+## What is the difference between a web page, website, web app, and web server?
 
 <!-- notecardId: 1770140547031 -->
 
-A web page is a single document that can be displayed in the browser, whereas a website is a collection of pages grouped together; a webb app is a website that provides functionality to users beyond simply displaying information, and a web server is the computer that hosts any of the above on the internet.
+A **web page** ia any HTML-based document rendered in a browser, usually with the help of CSS & JS files,
+a **website** is collection of related web pages,  
+a **web app** is a site providing interactive utility, or web based application, and
+a **web server** is computer hosting and serving these resources to clients over the internet.
 
 [#]() [#]() [#]()
 
@@ -110,7 +117,9 @@ A web page is a single document that can be displayed in the browser, whereas a 
 
 <!-- notecardId: 1770140547032 -->
 
-A browser is a program that enables users to view, navigate, and interact with web documents; browsers are the most familiar type of user agent.
+Program that enables users to view, navigate, and interact with web documents.
+
+_Note_: Browsers are the most familiar type of user agent.
 
 [#]() [#]() [#]()
 
@@ -156,11 +165,13 @@ Chrome and Edge use the Blink rendering engine, while Safari uses Apple's Webkit
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What are the three primary JavaScript engines used by browsers?
+## What are the three primary engines used by browsers for JavaScript?
 
 <!-- notecardId: 1770140547037 -->
 
-Chrome uses v8, Safari/Apple use JavacriptCore, and Mozilla uses Spidermonkey.
+Chrome uses v8, Mozilla uses Spidermonkey, and Safari/Apple use JavacriptCore.
+
+_Note_: All three now also support WebAssembly; SpiderMonkey was first JavaScript engine (created by Brendan Eich in 1995).
 
 [#]() [#]() [#]()
 
@@ -170,7 +181,7 @@ Chrome uses v8, Safari/Apple use JavacriptCore, and Mozilla uses Spidermonkey.
 
 <!-- notecardId: 1770140547038 -->
 
-Any browser, scraper, or other program that displays, navigates, and interacts with web docs.
+Any program that displays, navigates, and interacts with web docs; could be a browser, scraper, or other app.
 
 [#]() [#]() [#]()
 
@@ -184,16 +195,23 @@ Any browser, scraper, or other program that displays, navigates, and interacts w
 HTTP request header that identifies client's browser, OS, and version.
 
 Example: `User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0`
+_Note: "Mozilla/5.0" appears in all modern browsers for legacy compatibility:_
+
+```
+Mozilla/5.0          ← Everyone claims this (legacy compatibility)
+Windows NT 10.0      ← Actual OS
+Chrome/120.0.0.0     ← Actual browser version
+```
 
 [#]() [#]() [#]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What is TCP/IP?
+## What are TCP/IP?
 
 <!-- notecardId: 1770140547040 -->
 
-Transmission Control Protocol (TCP) and Internet Protocol (IP), commonly referred to as TCP/IP, are communication protocols that define how data should travel across the internet.
+The Transmission Control Protocol (TCP) and Internet Protocol (IP), respectively, are the comms protocols defining how packets are _transported_ and _routed_ across the internet.
 
 [#]() [#]() [#]()
 
@@ -285,7 +303,7 @@ Hypertext Transfer Protocol (HTTP) is the set of rules defining the format of cl
 
 <!-- notecardId: 1770140547050 -->
 
-HTTP Secure; uses TLS encryption to prevent eavesdropping & manipulation of client-server communications.
+Secure version of the HTTP protocol that uses TLS encryption to prevent eavesdropping & manipulation of client-server communications.
 
 (TLS is _Transport Layer Security_)
 
@@ -297,7 +315,9 @@ HTTP Secure; uses TLS encryption to prevent eavesdropping & manipulation of clie
 
 <!-- notecardId: 1770140547051 -->
 
-Transport Layer Security (TLS) is a protocol enabling applications to communicate secures across networks using defined methods of authentication, encryption, and data integrity. While most commonly used for HTTPS comms, TLS is also used to secure email, instant messaging, and VOIP communications.
+Transport Layer Security; a protocol for encrypting and authenticating network communications.
+
+_Note_: TLS doesn't only HTTPS; it also secures email, messaging, and VoIP.
 
 [#]() [#]() [#]()
 
@@ -307,19 +327,19 @@ Transport Layer Security (TLS) is a protocol enabling applications to communicat
 
 <!-- notecardId: 1770140547052 -->
 
-Secure Sockets Layer (SSL) is a now-deprecated security protocol that was used for HTTPS communications prior to full TSL (Transport Security Layer) adoption in the mid 2010s.
+Secure Sockets Layer; the now-deprecated security protocol used in HTTPS prior to browsers fully adopting TSL in mid 2010s.
+
+_Note_:TSL security protocol layer of of HTTPS means Transport Security Layer.
 
 [#]() [#]() [#]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What is an HTTP response status code?
+## What are HTTP response status codes?
 
 <!-- notecardId: 1770140547053 -->
 
-Three digit success/failure codes servers respond to client HTTP requests with.
-
-Example: 200 OK, 404 NOT FOUND etcetera.
+Three-digit codes servers send before response data, indicating request outcome: success (`200` OK), redirection (`301`), client error (`404` Not Found, resource doesn't exist), or server error (`503` Service Unavailable, server overloaded/in maintenance).
 
 [#]() [#]() [#]()
 
@@ -391,11 +411,11 @@ Web is request-response — servers only send what clients explicitly ask for
 
 <!------------------------------------------------------------------------------------------- -->
 
-## Why does the server send a status code before the website files?
+## Why does the server send a status code before sending website files?
 
 <!-- notecardId: 1770399465531 -->
 
-Client needs to know if request succeeded/failed before processing data
+So the client doesn't waste resources unnecessarily processing a body; `404` means don't bother processing the body (whether HTML, image, or PDF); `301` means fetch from a different URL instead; `304` means use your cached version.
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -412,3 +432,13 @@ Small packets allow failed pieces to resend individually, improving reliability
 <!-- notecardId: 1770399465533 -->
 
 Any requests for systems to look up and return information.
+
+<!------------------------------------------------------------------------------------------- -->
+
+## Walk through packet encapsulation for an HTTPS request.
+
+<!-- notecardId: 1770508135797 -->
+
+Application creates HTTP request → TLS encrypts it → TCP adds reliability headers (sequence numbers, ports) → IP adds routing headers (source/dest addresses) → Ethernet adds local delivery headers (MAC addresses).
+
+At destination, each layer strips its header and passes payload up.

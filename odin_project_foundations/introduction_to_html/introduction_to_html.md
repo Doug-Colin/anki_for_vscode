@@ -559,7 +559,7 @@ When linking to internal pages within the same site.
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What attributes should always be set on `<img>` tags to prevent content from shifting as it loads?
+## What attributes should always be set on `<img>` tags to prevent content from shifting after image load?
 
 <!-- notecardId: 1770140554544 -->
 

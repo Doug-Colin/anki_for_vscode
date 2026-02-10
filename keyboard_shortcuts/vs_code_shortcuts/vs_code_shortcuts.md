@@ -92,8 +92,16 @@ Cmnd + D
 <!-- notecardId: 1770140383130 -->
 
 %
-Cmnd + K
+Cmnd + K deselect current, Cmnd + D to select next.
 
 [#vscode]() [#cursor management]() [#shortcuts]() [#keybindings]()
 
 <!------------------------------------------------------------------------------------------- -->
+
+## Shortcut to 'Go To' specific line number?
+
+Ctrl + G
+-> #, enter
+
+<!------------------------------------------------------------------------------------------- -->
+<!-- ADD CARDS ON SPLITTING EDITOR / WORKIGN IN AND NAVIGATING SPLIT EDITOR  -->

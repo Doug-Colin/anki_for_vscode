@@ -25,11 +25,11 @@ Example:
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What's a CSS selector?
+## What's are CSS selectors?
 
 <!-- notecardId: 1770760340931 -->
 
-CSS CSS selectors 'select' the HTML elements that a CSS rule applies to.
+CSS selectors are how we target HTML elements for styling.
 [#CSS]() [#CSS selectors]()
 
 <!------------------------------------------------------------------------------------------- -->
@@ -68,11 +68,11 @@ _Makes text content of all `<div>`'s white._
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What does the CSS class selector do, and how is it applied
+## What does the CSS class selector do, and syntactically, how is it applied?
 
 <!-- notecardId: 1770760340934 -->
 
-Targets elements by their `class=""` attribute values;
+Targets elements by their `class=""`values;
 Apply by prepending each class value with a period.
 
 _case sensitive_.
@@ -95,12 +95,11 @@ _Makes all text content of all elements with attribute_ `class="alert-text"` red
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What do CSS ID CSS selectors do, and how are they applied?
+## What do CSS ID CSS selectors do, and how are they applied, syntactically?
 
 <!-- notecardId: 1770760340935 -->
 
-Like class CSS selectors, ID CSS selectors target elements by their `id=""` attribute values;
-Apply by prepending id value with a hashtag.
+ID CSS selectors target elements by their `id=""` attribute value and are prepended with a hash symbol.
 
 _case sensitive_.
 
@@ -128,7 +127,8 @@ _Makes background color blue of all element with id attribute value of_ `id="tit
 <!-- notecardId: 1770760340936 -->
 
 Rarely if ever.
-Use ID CSS selectors for links redirecting to sections of current page, or for finely targeting specificity.
+**Remember:** Use `class` for styling. Reserve `id` for truly unique elements, or overriding conflicting styles via maximum specificity.
+
 [#CSS]() [#CSS selectors]()
 
 <!------------------------------------------------------------------------------------------- -->
@@ -535,15 +535,17 @@ Importance, Origin, Specificity, and Position.
 
 In order: Active transitions, !important, active animations, and 'normal' (everything else).
 
+_Remember_: Active / Important, or Activity and Importance is a more memorable way to think of it.
+
 [#CSS]() [#specificity]() [#The CSS Cascade]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## Concerning the first tier of the Cascade, Importance, what's the difference between an active transition and an active animation?
+## Concerning the first tier of the Cascade, Importance, what's the distinction between an active transitions and active animations?
 
 <!-- notecardId: 1770760340970 -->
 
-Active transitions refer to user-triggered changes to CSS like `:hover`; active animations use the CSS `animation` property (usually with keyframes).
+Active transitions to user-triggered changes to CSS like `:hover`; whereas active animations use the `animation` property (are are keyframed).
 
 [#CSS]() [#specificity]() [#The CSS Cascade]()
 
@@ -569,6 +571,7 @@ ID selectors
 Class, pseudo-class, and other attribute selectors
 Type/psuedo-element selectors.
 
+_Remember_: Specificity order is ILIdCT; I.L.Id.C.T ('illidcit'). Inline > Layer > ID > Class > Type.
 [#CSS]() [#specificity]() [#The CSS Cascade]()
 
 <!------------------------------------------------------------------------------------------- -->

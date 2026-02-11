@@ -40,7 +40,7 @@ Examples:
 
 <!-- notecardId: 1770140554499 -->
 
-Using HTML tags that describe content's role or purpose in the document's structure, instead of generic tags like `<div>` or `<span>`.
+Using HTML tags according to their purpose in the document's structure.
 
 _Remember: semantic HTML a the foundation of HTML best-practices._
 
@@ -74,7 +74,7 @@ Example: `<br>` and `<img>`.
 
 <!-- notecardId: 1770140554502 -->
 
-Because the tags are void of any content.
+Because the tags are void of content.
 
 [#HTML]() [#fundamentals]()
 
@@ -236,7 +236,7 @@ _Remember: Screen readers announce anything within a `<strong>` tag with emphasi
 <!-- notecardId: 1770140554517 -->
 
 %
-For text that should be visually bold for screen readers, without voice emphasis (use `<em>`) or critical significance (use `<strong>`).
+When designating text as bold for screen readers; many devs avoid `<b>` and stick to CSS for boldface.
 
 Example:
 `<b>Product name:</b> Widget 3000` or keywords in a document.
@@ -350,17 +350,17 @@ The `target` attribute specifies whether a clicked anchor tag link will open in 
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What is the default behavior of the anchor element's `target` attribute, if unset?
+## Where will anchor elements open links, if their `target` attribute is unset?
 
 <!-- notecardId: 1770140554527 -->
 
-If the `target` attribute is unset, an anchor link will open in the current browser tab.
+In the current browser tab.
 
 [#HTML]() [#fundamentals]() [#links]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## How can anchor links be set to open in a new browser tab (or windows, pending user settings), rather than current tab?
+## How can anchor links be set to open in a new tab/window (pending user settings), rather than user's current tab?
 
 <!-- notecardId: 1770140554528 -->
 
@@ -423,7 +423,7 @@ Prevents pages opened in new tabs/windows from accessing/manipulating the origin
 <!-- notecardId: 1770140554533 -->
 
 %
-Hides the user's origin from a newly opened page by preventing the browser from sending the `Referer` HTTP header; also includes `noopener` protection.
+Hides a user's origin from a newly opened page by withholding `Referer` HTTP header; also includes `noopener` protection.
 
 _Note_: Yes, the HTTP header `Referer` is misspelled, a long-preserved typo in the spec.
 
@@ -491,7 +491,7 @@ Example: `<a href="/pages/site_glossary.html">`
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What does the leading / mean in a root-relative link?
+## What does the leading forwards slash (`/`) mean in a root-relative path link?
 
 <!-- notecardId: 1770140554539 -->
 
@@ -502,7 +502,7 @@ The leading `/` represents the the domain root, or root directory of a website.
 
 <!------------------------------------------------------------------------------------------- -->
 
-## When should relative, or document-relative, paths be used?
+## When should relative, or document-relative, paths be used in links?
 
 <!-- notecardId: 1770140554540 -->
 
@@ -537,18 +537,18 @@ Example: Wikipedia has many deeply nested pages and often uses root-relative lin
 
 <!------------------------------------------------------------------------------------------- -->
 
-## When should absolute links be used?
+## When should absolute path links be used?
 
 <!-- notecardId: 1770140554542 -->
 
 %
-Use absolute links when linking to external sites and resources and whenever a fully qualified URL is required.
+Use absolute path links when linking to external sites and other resources requiring a fully qualified URL.
 
 [#HTML]() [#fundamentals]() [#links]() [#paths]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## When should relative links be used for HTML anchor tags?
+## When should relative path links be used in `<a>` tags?
 
 <!-- notecardId: 1770140554543 -->
 
@@ -620,12 +620,12 @@ The GIF format is designed for simple animations with limited color palettes.
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What type of images is the PNG format designed for, and when should it be used?
+## What use-case is the PNG image format designed for, and what type of images should you use it on?
 
 <!-- notecardId: 1770140554549 -->
 
 %
-The PNG format is designed for images that need transparency, and should be used for icons, logos, and diagrams.
+PNGs use-case is images needing transparency; PNG should be used for icons, logos, and diagrams.
 
 [#HTML]() [#fundamentals]() [#images]() [#<img>]() [#image tag]()
 
@@ -802,7 +802,9 @@ No, never start `class=""` or `id=""` attribute values with numbers, because val
 
 <!------------------------------------------------------------------------------------------- -->
 
-## Besides <a> tags, where else is the `rel` attribute commonly used?
+## Besides `<a>` tags, where else is the `rel` attribute commonly used?
+
+<!-- notecardId: 1770834054807 -->
 
 On `<link>` elements in the `<head>` (e.g., rel="stylesheet", rel="icon", rel="canonical")
 
@@ -811,6 +813,8 @@ _Remember_: The `rel=""` attribute is not only for for external links (`rel="nor
 <!------------------------------------------------------------------------------------------- -->
 
 ## Is the `lang` attribute only used to specify an entire documents language via the `<html>` element?
+
+<!-- notecardId: 1770658089761 -->
 
 No, `lang` attribute specifies the language of any element's text content.
 
@@ -822,6 +826,25 @@ _Remember_: It's primarily used in `<html>` but for screen readers, use it for i
 
 ## When should you use `<em>` vs `<strong>`?
 
+<!-- notecardId: 1770658089762 -->
+
 Use `<em>` where you'd naturally stress words when speaking (`My dog <em>loves</em> treats`), and use `<strong>` for important or urgent information (`<strong>Warning: Flash Flood Alert</strong>`).
 
 <!------------------------------------------------------------------------------------------- -->
+
+## How do you point a link to another section within the same HTML document?
+
+<!-- notecardId: 1770834054810 -->
+
+%
+By pointing the `<a>` tag's `href=""` value at the target element's `id` attribute prepended by a hash.
+
+**Example:**
+
+```html
+Jump to Contact Contact Us
+```
+
+When clicked, the browser scrolls to the element with `id="contact"`.
+
+[#HTML]() [#links]() [#navigation]()

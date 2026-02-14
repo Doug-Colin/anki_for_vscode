@@ -659,3 +659,13 @@ No, symbols the universal and combinator selectors do not themselve have any spe
 The `.child` selector's `blue` would prevail, because _directly applied_ styles always prevail over _inherited_ styles.
 
 [#CSS]() [#specificity]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## What is a shorthand property?
+
+<!-- notecardId: 1771015893539 -->
+
+Shorthand properties are CSS properties that allow you to set multiple CSS property values simultaneously
+
+<!------------------------------------------------------------------------------------------- -->

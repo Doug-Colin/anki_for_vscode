@@ -74,12 +74,11 @@ array.length
 
 <!------------------------------------------------------------------------------------------- -->
 
-## When should you use .at() over bracket notation with .length for referencing array elements, and why?
+## Referencing an array's last element can be verbose; for example, `array[array.length -1]`; what array method can you use to reference the last item in an array more concisely?
 
 <!-- notecardId: 1776084721599 -->
 
-You should use .at() when referencing the last item in an array, because it allows negative indexing, so it can be written much shorter than `array[array.length - 1]`.
-Example:
+Use the .at() when referencing the last item in an array, because it allows negative indexing:
 
 ```js
 array.at(-1); // shorter, better, atleast for last/second to last element refs etc
@@ -90,27 +89,27 @@ array[array.length - 1];
 
 <!------------------------------------------------------------------------------------------- -->
 
-## In CS terms, what is a queue?
+## What is a queue?
 
 <!-- notecardId: 1776084721601 -->
 
-Queues are FIFO (first in first out) collections of ordered elements that support two operations; advancing the _queue_ by taking elements from the beginning of the array via `.shift()`, and adding to the queue by appending elements to the array's end via `.push()`.
+A list data structure that observes FIFO, or 'first-in, first-out' principles by adding new items to one end, called the 'back', and removing items from the opposite end, called the 'front'.
 
-[#arrays]() [#cs]() [#queues]() [#.push()]() [#.shift()]()
+[#arrays]() [#cs]() [#queue]() [#data-structures]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## In CS terms, what is a stack?
+## What is a stack?
 
 <!-- notecardId: 1776084721602 -->
 
-Stacks are LIFO (last in first out) collections of ordered elements that support two operations; advancing the _stack_ by taking an element from the _end_ of the array via `.pop()`, and adding to the stack by appending an element to the array's end via `.push()`.
+A list data structure that observes LIFO, or 'last-in, first-out' principles by adding new items and removing current items from the same 'end' of the list, which is referred to as the 'top' of the stack.
 
-[#arrays]() [#cs]() [#queues]() [#.push()]() [#.shift()]()
+[#arrays]() [#cs]() [#stack]() [#call-stack]() [#data-structures]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## ## Both queues and stacks use `.push()` to add elements. How do they differ in removal, and why?
+## Both queues and stacks use `.push()` to add elements. How do they differ in removal, and why?
 
 <!-- notecardId: 1776084721604 -->
 
@@ -152,15 +151,15 @@ Both .pop() and .at(-1) `return` the last element of an array, but they differ i
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What array method would you use if you wanted to return the first element from an array, and remove it, modifying the array?
+## What array method would you use if you wanted to remove only the first element from an array, and return it, modifying the array?
 
 <!-- notecardId: 1776084721612 -->
 
 `.shift()`
 
-_Rememeber_: to _advance_ the queue, you `.shift()` the line forward.
+_Remember_: to _advance_ the queue, you `.shift()` the line forward.
 
-[#arrays]()
+[#arrays]() [#.shift]() [#queues]()
 
 <!------------------------------------------------------------------------------------------- -->
 
@@ -174,21 +173,21 @@ _Rememeber_: to _advance_ the queue, you `.shift()` the line forward.
 
 <!------------------------------------------------------------------------------------------- -->
 
-## Array methods `.push()` and `.unshift()` add elements to the end and beginning of arrays, respectively. But how can you 'push' or 'unshift' multiple elements onto the beginning or end of an array?
+## Array methods `.push()` and `.unshift()` add elements to the end and beginning of arrays, respectively. How can you 'push' or 'unshift' multiple elements onto the beginning or end of an array at once?
 
 <!-- notecardId: 1776084721615 -->
 
-By using the same methods with additional arguments, both `.push()` and `.unshift()` support adding multiple elements at once.
+By using `.push()` or `.unshift()` with the additional values separated by a comma.
 
 [#arrays]() [#array.shift()]() [#.shift()]() [#array.push()]() [#.push()]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## In JavaScript, what, exactly, is an array?
+## In JavaScript, what is an array?
 
 <!-- notecardId: 1776084721617 -->
 
-JavaScript arrays are just objects whose key-value pairs are ordered numbers and elements, respectively, with a single `length` property and array-specific prototype methods.
+An ordered-collection object with key-value pairs of indices and values, a single `length` property, and built in array methods.
 
 [#arrays]()
 
@@ -337,7 +336,7 @@ let arr = new Array(16);
 ```
 
 %
-Creates a new array that with a `.length` value of that number, in this case, a `16` element long array with all elements holding `undefined`.
+Creates a new array that with a `.length` of `16`, with all elements holding `undefined`.
 
 [#arrays]() [#arrays-constructor]() [#.length]()
 
@@ -373,20 +372,20 @@ For example, `["F", "O", "R", "T"].join("")` returns `"FORT"`; `["F", "O", "R", 
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What are the valid methods for comparing arrays of primitive values?
+## What are two valid methods for comparing arrays of primitive values, item-by-item?
 
 <!-- notecardId: 1776084721644 -->
 
-Compare arrays item-by-item using the _strict_ equality operator, `===` in `array.every()` with a callback, or alternately more verbosely, nested loops.
+Use either `array.every()` with a callback, or more verbosely, nested for loops, with the _strict_ equality operator, `===` to compare two arrays or primitives item-by-item.
 
 For example via `array.every()`:
-arr1.length === arr2.length && arr1.every((val, i) => val === arr2[i]);
+`arr1.length === arr2.length && arr1.every((val, i) => val === arr2[i]);`
 
 [#arrays]() [#objects]() [#array.every()]() [.every()]()
 
 <!------------------------------------------------------------------------------------------- -->
 
-## What comparison operator should you use when comparing arrays of primitive values, and which should you not?
+## What comparison operator should you use when comparing arrays of primitive values, item-by-item, and which should you not?
 
 <!-- notecardId: 1776084721645 -->
 
@@ -416,5 +415,31 @@ use `for...in` for iterating _objects_ properties, as `for...in` iterates all ob
 _Remember_: IN objects, OF arrays. OF arrays, IN objects.
 
 [#arrays]() [#objects]() [#for-of-loop]() [#for...in]# [#for-in-loop]#
+
+<!------------------------------------------------------------------------------------------- -->
+
+## When writing a `for` loop to iterate through an array's indices, what comparison operator should you use when setting the condition? WHy?
+
+Use the less than, not the less than equals, comparison operator when iterating through an array with a `for` loop, because while you iterate through indices `0 to n`, the `array.length` property is `1 to n`; in other words, the last array index is always _one less_ than the `.length`, so setting `i < array.length` ends at the last index.
+
+[#arrays]() [#for-loop]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## When a stack data structure is implemented, what are the conventional names for the methods that 1) add new items and 2) remove current items from the 'top' of the stack?
+
+Stack methods for adding new items to the 'top' are conventionally named `push`, while those for removing items from the 'top' are conventionally called `pop`.
+
+[#arrays]() [#cs]() [#stack]() [#call-stack]() [#data-structures]()
+
+<!------------------------------------------------------------------------------------------- -->
+
+## When a queue data structure is implemented, what are the conventional names for the methods that 1) add new items and 2) remove current items from the queue?
+
+Queue methods for adding new items to the 'back' of the queue are conventionally named 'enqueue', while those for removing items from the front are called 'dequeue'.
+
+_note_: though queue data structure methods are traditionally called enqueue and dequeue, the operations are similar to JS's .pop() and .shift(), respectively.
+
+[#arrays]() [#cs]() [#queue]() [#data-structures]()
 
 <!------------------------------------------------------------------------------------------- -->
